@@ -1,4 +1,4 @@
-# SP-Frontend-Dev-CA1
+# SP Frontend Dev CA1
 
 My very first time coding a website :D 
 
