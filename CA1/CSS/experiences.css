@@ -1,0 +1,341 @@
+/*
+Alden Chia 2205584
+DISM 1A/01
+*/
+
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ 
+.bg1 {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.bg2 {
+  grid-column: 1/ -1;
+  grid-row: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+/* Menu Bar */
+
+.hamburger {
+  margin-top: 15px;
+  margin-left: 10px;
+  position: fixed
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(91, 98, 227, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+  
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+img.MEE {
+  border-radius: 50%;
+  width: 198px;
+  height: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1vw;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.sidenav {
+  text-align: left;
+  line-height: 55px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Grid stuffs */
+
+body {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 47vw 20vw 55vw 25vw 55vw 55vw 55vw 55vw 10vw;
+}
+
+/* Main header */
+
+.main {
+  text-align: center;
+  font-size: 8vw;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin-top: 12vw;
+  font-weight: bold;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* FMO */
+
+.FMO {
+  grid-column: 1 / 3;
+  grid-row: 3;
+  text-align: left;
+  margin-top: 1vw;
+  font-family:'Oxygen', sans-serif;
+  font-size: 2.4vw;
+  margin-left: 6vw;
+}
+
+.FMO p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+.FOMP {
+  grid-column: 3 / -1;
+  grid-row: 3;
+  margin-top: -5vw;
+  margin-left: 8vw;
+  height: 50%;
+  width: 70%;
+}
+
+/* Life in SP */
+
+.LiSP {
+  grid-column: 3 / -1;
+  grid-row: 4;
+  text-align: left;
+  margin-top: -12vw;
+  font-family:'Oxygen', sans-serif;
+  font-size: 3vw;
+  margin-right: 5vw;
+}
+
+.LiSP p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+.LiSPP {
+  grid-column: 1 / 3;
+  grid-row: 4;
+  margin-top: -8vw;
+  margin-left: 10vw;
+}
+
+/* Courses offered by SOC */
+
+.course  {
+  grid-column: 1 / -1;
+  grid-row: 5;
+}
+
+.course h1 {
+  text-align: center;
+  font-size: 5vw;
+  margin-top: 20vw
+}
+
+/* Common ICT Programme */
+
+.DCITP {
+  grid-column: 1 / 3;
+  grid-row: 6 / -1;
+  margin-left: 7vw;
+  margin-top: 15vw;
+  text-align: left;
+}
+
+.DCITP h1 {
+  font-family:'Oxygen', sans-serif;
+  font-size: 2.5vw;
+}
+
+.DCITP h1:hover {
+  transform: scale(1.1);
+}
+
+.DCITP p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+#DCITPlogo {
+  grid-column: 3 / -1;
+  grid-row: 6 / -1;
+  margin-top: 8vw;
+  margin-left: 5vw;
+  
+}
+
+
+/* Information Technology */
+
+.DIT {
+  grid-column: 3 / -1;
+  grid-row: 7 / -1;
+  margin-right: 5vw;
+  margin-top: -1vw;
+  text-align: left;
+}
+
+.DIT h1 {
+  font-family:'Oxygen', sans-serif;
+  font-size: 2.5vw;
+}
+
+.DIT h1:hover {
+  transform: scale(1.1);
+}
+
+.DIT p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+#DITlogo {
+  grid-column: 1 / 2;
+  grid-row: 7 / 8;
+  margin-left: 15vw;
+  margin-top: 6vw;
+  transform: scale(1.9);
+}
+
+/* Inforcomm Security Management */
+
+.DISM {
+  grid-column: 1 / 3;
+  grid-row: 8 / -1;
+  margin-left: 6vw;
+  text-align: left;
+  margin-top: -15vw;
+}
+
+.DISM h1 {
+  font-family:'Oxygen', sans-serif;
+  font-size: 2.5vw;
+}
+
+.DISM h1:hover {
+  transform: scale(1.1);
+}
+
+.DISM p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+#DISMlogo {
+  grid-column: 3 / -1;
+  grid-row: 8;
+  margin-left: 10vw;
+  margin-top: -15vw;
+}
+
+/* Applied AI and Analytics */
+
+.DAAA {
+  grid-column: 3 / -1;
+  grid-row: 9 / -1;
+  margin-right: 5vw;
+  text-align: left;
+  margin-top: -28vw
+}
+
+.DAAA h1 {
+  font-family:'Oxygen', sans-serif;
+  font-size: 2.5vw;
+}
+
+.DAAA h1:hover {
+  transform: scale(1.1);
+}
+
+.DAAA p {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+
+#DAAAlogo {
+  grid-column: 1 / 3;
+  grid-row: 9;
+  margin-left: 10vw;
+  margin-top: -28vw;
+  transform: scale(0.9)
+}
+
+/* My Foot */
+
+footer {
+  grid-row: 10;
+  grid-column: 1 / -1;
+  background-color: rgba(71, 200, 230, 0.7);
+  margin-top: -2vw;
+}
+
+footer .ig {
+  width: 2%; 
+  height: 70%; 
+  margin-left: 40vw;
+}
+
+footer .bird {
+  width: 2.5%;
+  height: 80%;
+  margin-left: 5vw;
+}
+
+footer .disc {
+  width: 2.5%;
+  height: 65%;
+  margin-left: 5vw;
+}

@@ -1,0 +1,276 @@
+/*
+Alden Chia 2205584
+DISM 1A/01
+*/
+
+@charset "utf-8";
+
+.wrapper{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Menu Bar */
+
+.hamburger {
+  position: sticky;
+  margin-top: -10vw;
+  margin-left: 1vw;;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(91, 98, 227, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+  
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+img.MEE {
+  border-radius: 50%;
+  width: 198px; /* 220 */
+  height: 180px; /* 200 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1vw;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.sidenav {
+  text-align: left;
+  line-height: 55px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* For animation */
+
+body{
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #343F4F;
+}
+
+.wrapper{
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: -6vw
+}
+
+.wrapper .dynamic-txts{
+  margin-left: 15px;
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+
+.dynamic-txts li{
+  list-style: none;
+  color: rgb(91, 98, 227);
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px;
+}
+
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(166, 202, 245);
+  border-left: 2px solid rgb(91, 98, 227);
+  animation: typing 3s steps(15) infinite;
+}
+
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
+/* Grid Stuffs */
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background-color: rgb(166, 202, 245);
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* Values and Personalities */
+
+.values {
+  grid-column: 3;
+  grid-row: 3;
+  height: 100%;
+  width: 100%;
+  margin-top: -5vw;
+  margin-left: 3vw;
+}
+
+.values h2 {
+  margin-top: -4vw;
+  margin-left: 30px;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+p {
+  margin-left: 4vw;
+  margin-top: 1vw;
+  font-size: 17px;
+  font-family: 'Oxygen', sans-serif;
+
+}
+
+/* Interest */
+
+.interest {
+  grid-row: 1 / 8;
+  grid-column: 3;
+  color: black;
+  margin-left: 5vw;
+  margin-top: -10vw;
+}
+
+.interest h4 {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: -4vw
+}
+
+.interest p{
+  margin-left: 2vw;
+  margin-top: 1vw;
+  font-size: 17px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+
+/* Picture 1 */
+
+img.image1 {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  height: 100%;
+  width: 100%;
+  margin-top: -10vw;
+  margin-left: 20vw
+}
+
+/* My Personality */
+
+.personality {
+  grid-row: 3;
+  grid-column: 1 / 3;
+  margin-left: 10vw;
+  margin-top: -12vw;
+}
+
+.personality h3 {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.personality p {
+  margin-left: 0;
+  margin-top: 1vw;
+  font-size: 17px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* My Foot */
+ 
+footer {
+  grid-row: 4;
+  grid-column: 1 / -1;
+  background-color: rgba(71, 200, 230, 0.7);
+  margin-top: -2vw;
+}
+
+footer .ig {
+  width: 2%; 
+  height: 2%; 
+  margin-left: 40vw; 
+}
+
+footer .bird {
+  width: 2.3%;
+  height: 2%;
+  margin-left: 5vw;
+}
+
+footer .disc {
+  width: 2.5%;
+  height: 3%;
+  margin-left: 5vw;
+}

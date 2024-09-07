@@ -1,0 +1,118 @@
+<!--
+Alden Chia 2205584
+DISM 1A/01
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Feedback</title>
+
+    <link href="../CSS/feedback.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxygen:wght@300&family=Poppins&display=swap"
+rel="stylesheet">
+
+</head>
+<body>
+
+    <!--Menu Bar-->
+
+    <script src="../JS/script.js"></script>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img class="MEE" src="../Images/pictureofme.webp" alt="Picture of Alden">
+        <a href="index.html">Home</a>
+        <a href="experiences.html">Experiences</a>
+        <a href="career.html">Career Prospects</a>
+        <a href="feedback.html">Contact Me</a>
+    </div>
+
+    <div class="hamburger">
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+   </div>
+
+   <div class="intouch">
+       <h1>
+           Get in touch!
+       </h1>
+   </div>
+
+   <!--Contact Details-->
+
+   <div class="details">
+       <h1>
+           Email: <a href="mailto:ALDENCHIAYX07.22@ichat.sp.edu.sg">
+            aldenchiayx07.22@ichat.sp.edu.sg
+         </a><br/>
+           <br/>Contact Number: <a href="tel:+6580400677">+65 8040 0677</a>
+       </h1>
+   </div>
+
+   <!--Form-->
+
+   <form>
+        <div class="firstname">
+            <label for="fname">First Name*<br/></label>
+            <input name="fbfname" id="fname" type="text" required />
+        </div>
+
+        <div class="lastname">
+            <label for="lname">Last Name<br/></label>
+            <input name="fblname" id="lname" type="text"/>
+        </div>
+
+        <div class="hpnum">
+            <label for="phone">Contact Number*<br/></label>
+            <input name="fbhpnum" id="phone" type="tel" placeholder="nnnnnnnn" pattern="[0-9]{8}" required/>
+         </div>
+
+         <div class="email">
+            <label for="mail">Email*<br/></label>
+            <input name="fbemail" id="mail" type="email" placeholder="...@gmail.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$" required/>
+         </div>
+
+        <div class="date">
+            <label for="date">Date visited<br/></label>
+            <input name="fbdate" id="date" type="date" required />
+        </div>
+    
+        <div class="rating">
+            <label for="rate">Rate the overall website<br />
+            </label>
+            <p><br/>0 10</p>
+            <input name="fbRate" id="rate" type="range" value="5" step="1" min="0" max="10" />
+        </div>
+
+        <div class="message">
+            <label for="message">Enquiry<br/></label>
+            <textarea name="fbmessage" id="message" required></textarea>
+        </div>
+
+
+        <div id="buttons">
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset Form"/>
+        </div>
+    </form>   
+
+    <footer>
+    
+        <a href="https://www.instagram.com/riiithumta/?hl=en" target="_blank"><img class="ig" src="../Images/ig.png" alt="My Instagram"></a>
+        
+        <a href="https://twitter.com/BarackObama?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img class="bird" src="../Images/Twitter.png" alt="My Twitter"></a>
+        
+        <a href="https://www.youtube.com/watch?v=iik25wqIuFo" target="_blank"><img class="disc" src="../Images/disc.png" alt="My Discord"></a>
+    
+    </footer>
+
+</body>
+
+</html>

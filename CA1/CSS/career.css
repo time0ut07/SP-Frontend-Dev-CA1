@@ -1,0 +1,304 @@
+/*
+Alden Chia 2205584
+DISM 1A/01
+*/
+
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.bg {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8  ;
+}
+
+/* Menu Bar */
+
+.hamburger {
+  position: fixed;
+  margin-top: 15px;
+  margin-left: 10px;
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgba(91, 98, 227, 0.85);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+  
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+  
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+img.MEE {
+  border-radius: 50%;
+  width: 198px; /* 220 */
+  height: 180px; /* 200 */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -1vw;
+}
+
+a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.sidenav {
+  text-align: left;
+  line-height: 55px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Grid Stuffz */
+
+body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 50vw 55vw 55vw 30vw 55vw;
+}
+
+/* Title */
+
+.main {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+}
+
+.main h1 {
+  font-size: 5vw;
+  margin-top: 20vw;
+  text-align: center;
+}
+
+/* Career 1 */
+
+.career1 {
+  grid-row: 2 / -1;
+  grid-column: 1 / 3;
+  text-align: left;
+  margin-left: 6vw;
+  margin-top: 18vw
+}
+
+.career1 h1 {
+  font-size: 2.5vw;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.career1 p {
+  font-size: 1.5vw;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 1vw;
+}
+
+#career1 {
+  grid-row: 2 / -1;
+  grid-column: 3 / -1;
+  margin-top: 15vw;
+  margin-left: 5vw
+}
+
+/* Career 2 */
+
+.career2 {
+  grid-row: 3 / -1;
+  grid-column: 3 / -1;
+  text-align: left;
+  margin-right: 5vw;
+  margin-top: 5vw;
+}
+
+.career2 h1 {
+  font-size: 2.5vw;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+}
+
+.career2 p {
+  font-size: 1.5vw;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 1vw;
+}
+
+#career2 {
+  grid-row: 3 / -1;
+  grid-column: 1 / 3;
+  margin-left: 6vw;
+  margin-top: 3vw
+}
+
+/* Career 3 */
+
+.career3 {
+  grid-row: 4 / -1;
+  grid-column: 1 / 3;
+  text-align: left; 
+  margin-left: 6vw;
+}
+
+.career3 h1 {
+  font-size: 2.5vw;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  margin-top: -8vw;
+}
+
+.career3 p {
+  font-size: 1.5vw;
+  font-family: 'Oxygen', sans-serif;
+  margin-top: 1vw;
+}
+
+#career3 {
+  grid-row: 4 / -1;
+  grid-column: 3 / -1;
+  margin-left: 4vw;
+  margin-top: -10vw
+}
+
+/* Table Styles */
+
+table.table {
+  grid-row: 5 / -1;
+  grid-column: 1 / -1;
+  margin-top: 15vw;
+  margin-left: 8vw;
+  background: white;
+  border: 10px outset rgb(91, 98, 227);
+  border-collapse: collapse;   
+  font-size: 0.95em;
+  width: 80vw;
+  height: 30vw;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Table Cell Styles */
+
+table.table th, table.table td {
+  border: 1px solid rgb(166, 202, 245);
+  padding: 5px;
+  vertical-align: top;
+}
+
+/* Table Caption Styles */
+
+table.table caption {
+  caption-side: bottom;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+/* Row Group Styles */
+
+table.table thead {
+  background: rgb(71, 200, 230);
+  color: black;
+  font-weight: bold;
+  font-family: 'Oxygen', sans-serif;
+}
+
+table.table tfoot {
+  background: rgb(71, 200, 230);
+  color: black;
+  font-size: 0.8em;
+}
+
+table.table thead tr{
+  height: 30px;
+}
+
+table.table tbody tr {
+  height: 40px;
+  font-family: 'Oxygen', sans-serif;
+  text-align: center;
+}
+
+/* Column Group Styles */
+
+col#firstCol {
+  background: rgb(71, 200, 230);
+  /* width: 16% */
+}
+
+col.careerCols {
+  background: rgb(71, 200, 230);
+  /* width: 12% */
+}
+
+/* Background for table */
+
+.bgtable {
+  grid-row: 5 / -1;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -5vw;
+  opacity: 0.3;
+}
+
+/* My Foot */
+
+footer {
+  grid-row: 6;
+  grid-column: 1 / -1;
+  background-color: rgba(71, 200, 230, 0.7);
+  margin-top: 0vw;
+}
+
+footer .ig {
+  width: 2%; 
+  height: 70%; 
+  margin-left: 40vw; 
+}
+
+footer .bird {
+  width: 2.6%;
+  height: 80%;
+  margin-left: 5vw;
+}
+
+footer .disc {
+  width: 2.5%;
+  height: 65%;
+  margin-left: 5vw;
+}
